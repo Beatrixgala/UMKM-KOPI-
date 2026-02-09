@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Coffee - Pengalaman Kopi Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-img">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Luxury Coffee</h1>
+                    <span>Pengalaman Kopi Premium</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="active">Beranda</a></li>
+                    <li><a href="#profil">tentangkami</a></li>
+                    <li><a href="#about">Keunggulan</a></li>
+                    <li><a href="#products">Menu</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#location">Lokasi</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#" class="btn-order">Pesan Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar untuk mobile -->
+    <div class="sidebar">
+        <div class="sidebar-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="#about"><i class="fas fa-star"></i> Keunggulan</a></li>
+                <li><a href="#profil"><i class="fas fa-star"></i> tentangkami</a></li>
+                <li><a href="#products"><i class="fas fa-coffee"></i> Menu</a></li>
+                <li><a href="#testimonials"><i class="fas fa-comment"></i> Testimoni</a></li>
+                <li><a href="#location"><i class="fas fa-map-marker-alt"></i> Lokasi</a></li>
+                <li><a href="#contact"><i class="fas fa-address-book"></i> Kontak</a></li>
+                <li><a href="#" id="signin-btn"><i class="fas fa-user"></i> Masuk</a></li>
+                <li><a href="#" class="btn-order-sidebar"><i class="fas fa-shopping-cart"></i> Pesan Online</a></li>
+            </ul>
+            <div class="sidebar-social">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Hero Section (Beranda) -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <div class="hero-text">
+                            <h2>Rasakan <span class="highlight">Kemewahan</span> Kopi Sempurna</h2>
+                            <p>Setiap biji kopi kami dipilih dengan teliti dan disangrai dengan presisi untuk menciptakan pengalaman kopi premium yang tak terlupakan.</p>
+                            <div class="hero-buttons">
+                                <a href="#products" class="btn btn-primary">Lihat Menu Kami</a>
+                                <a href="#location" class="btn btn-secondary">Kunjungi Kedai Kami</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media di Beranda -->
+                        <div class="hero-social">
+                            <h4>Ikuti Perjalanan Kami</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Jam Operasional di Beranda -->
+                        <div class="hero-hours">
+                            <div class="hours-card">
+                                <div class="hours-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="hours-content">
+                                    <h4>Buka Setiap Hari</h4>
+                                    <div class="hours-grid">
+                                        <div class="day">Senin - Jumat</div>
+                                        <div class="time">07:00 - 22:00</div>
+                                        <div class="day">Sabtu - Minggu</div>
+                                        <div class="time">08:00 - 23:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Kami -->
+    <section id="about" class="section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Keunggulan Kami</h2>
+                <p>Apa yang membuat Luxury Coffee berbeda</p>
+            </div>
+            <div class="advantages-container">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Biji Kopi Premium</h3>
+                    <p>Kami hanya menggunakan biji kopi grade specialty dari perkebunan terbaik di Indonesia dan dunia.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Roasting Profesional</h3>
+                    <p>Proses roasting yang presisi dengan mesin terbaik untuk mengeluarkan karakter terbaik setiap biji kopi.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Barista Berpengalaman</h3>
+                    <p>Barista kami telah tersertifikasi dan berpengalaman untuk menyajikan kopi dengan kualitas terbaik.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Ramah Lingkungan</h3>
+                    <p>Kami menggunakan kemasan ramah lingkungan dan mendukung pertanian kopi berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Kopi -->
+    <section id="products" class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Kopi</h2>
+                <p>Temukan cita rasa favorit Anda</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="best">⭐ Terlaris</button>
+                <button class="menu-tab" data-tab="special">✨ Spesial</button>
+                <button class="menu-tab" data-tab="signature">👑 Signature</button>
+            </div>
+            
+            <!-- Terlaris -->
+            <div class="menu-category active" id="best">
+                <h3 class="category-title">Paling Banyak Dipesan</h3>
+                <div class="menu-items-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Signature Blend">
+                            <div class="menu-badge">#1 Terlaris</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Luxury Signature Blend</h3>
+                                <div class="menu-price">Rp 35.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Arabica</span>
+                                <span class="menu-tag">Panas</span>
+                            </div>
+                            <p class="menu-desc">Perpaduan sempurna Arabika Brazil dan Ethiopia dengan cita rasa cokelat dan kacang.</p>
+                            <button class="btn-add-to-cart" data-product="Luxury Signature Blend" data-price="35000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Caramel Macchiato">
+                            <div class="menu-badge">Top Rated</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Caramel Macchiato</h3>
+                                <div class="menu-price">Rp 42.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Espresso</span>
+                                <span class="menu-tag">Susu</span>
+                            </div>
+                            <p class="menu-desc">Espresso dengan susu steamed, vanilla, dan caramel syrup dengan lapisan foam sempurna.</p>
+                            <button class="btn-add-to-cart" data-product="Caramel Macchiato" data-price="42000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Velvet Cold Brew">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Velvet Cold Brew</h3>
+                                <div class="menu-price">Rp 38.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Cold Brew</span>
+                                <span class="menu-tag">Dingin</span>
+                            </div>
+                            <p class="menu-desc">Cold brew 18 jam dengan tambahan susu oat dan gula aren, lembut seperti beludru.</p>
+                            <button class="btn-add-to-cart" data-product="Velvet Cold Brew" data-price="38000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hazelnut Latte">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Hazelnut Latte</h3>
+                                <div class="menu-price">Rp 40.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Latte</span>
+                                <span class="menu-tag">Kacang</span>
+                            </div>
+                            <p class="menu-desc">Latte dengan sirup hazelnut premium, creamy dengan aroma kacang yang khas.</p>
+                            <button class="btn-add-to-cart" data-product="Hazelnut Latte" data-price="40000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Spesial -->
+            <div class="menu-category" id="special">
+                <h3 class="category-title">Menu Spesial</h3>
+                <div class="menu-items-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blue Mountain Jamaica">
+                            <div class="menu-badge">Limited</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Blue Mountain Jamaica</h3>
+                                <div class="menu-price">Rp 85.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Premium</span>
+                                <span class="menu-tag">Langka</span>
+                            </div>
+                            <p class="menu-desc">Kopi legendaris dari Jamaica dengan rasa kompleks, asam seimbang, dan aftertaste yang panjang.</p>
+                            <button class="btn-add-to-cart" data-product="Blue Mountain Jamaica" data-price="85000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Honey Cinnamon Latte">
+                            <div class="menu-badge">Seasonal</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Honey Cinnamon Latte</h3>
+                                <div class="menu-price">Rp 45.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Latte</span>
+                                <span class="menu-tag">Rempah</span>
+                            </div>
+                            <p class="menu-desc">Latte dengan madu asli, kayu manis, dan sentuhan vanilla. Hangat dan nyaman.</p>
+                            <button class="btn-add-to-cart" data-product="Honey Cinnamon Latte" data-price="45000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salted Caramel Cold Foam">
+                            <div class="menu-badge">Baru</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Salted Caramel Cold Foam</h3>
+                                <div class="menu-price">Rp 48.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Cold Foam</span>
+                                <span class="menu-tag">Manis</span>
+                            </div>
+                            <p class="menu-desc">Iced coffee dengan cold foam salted caramel yang creamy dan nikmat.</p>
+                            <button class="btn-add-to-cart" data-product="Salted Caramel Cold Foam" data-price="48000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coconut Espresso Tonic">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Coconut Espresso Tonic</h3>
+                                <div class="menu-price">Rp 44.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Espresso</span>
+                                <span class="menu-tag">Tropis</span>
+                            </div>
+                            <p class="menu-desc">Espresso dengan tonic water dan air kelapa muda, menyegarkan dengan sentuhan unik.</p>
+                            <button class="btn-add-to-cart" data-product="Coconut Espresso Tonic" data-price="44000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Signature -->
+            <div class="menu-category" id="signature">
+                <h3 class="category-title">Signature Collection</h3>
+                <div class="menu-items-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Black Gold Espresso">
+                            <div class="menu-badge">Eksklusif</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Black Gold Espresso</h3>
+                                <div class="menu-price">Rp 55.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Espresso</span>
+                                <span class="menu-tag">Kuat</span>
+                            </div>
+                            <p class="menu-desc">Single origin espresso dari biji kopi rare dengan crema tebal dan rasa intens.</p>
+                            <button class="btn-add-to-cart" data-product="Black Gold Espresso" data-price="55000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tropical Coconut Cold Brew">
+                            <div class="menu-badge">Premium</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Tropical Coconut Cold Brew</h3>
+                                <div class="menu-price">Rp 52.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Tropis</span>
+                                <span class="menu-tag">Menyegarkan</span>
+                            </div>
+                            <p class="menu-desc">Cold brew dengan air kelapa muda dan potongan kelapa segar, menyegarkan.</p>
+                            <button class="btn-add-to-cart" data-product="Tropical Coconut Cold Brew" data-price="52000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Affogato">
+                            <div class="menu-badge">Artisan</div>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Luxury Affogato</h3>
+                                <div class="menu-price">Rp 65.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Dessert</span>
+                                <span class="menu-tag">Gelato</span>
+                            </div>
+                            <p class="menu-desc">Gelato vanilla premium disiram espresso panas dengan tambahan biscotti.</p>
+                            <button class="btn-add-to-cart" data-product="Luxury Affogato" data-price="65000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="menu-item-card">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Golden Turmeric Latte">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-header">
+                                <h3>Golden Turmeric Latte</h3>
+                                <div class="menu-price">Rp 46.000</div>
+                            </div>
+                            <div class="menu-tags">
+                                <span class="menu-tag">Sehat</span>
+                                <span class="menu-tag">Rempah</span>
+                            </div>
+                            <p class="menu-desc">Latte dengan kunyit, jahe, kayu manis, dan madu. Hangat dan menyehatkan.</p>
+                            <button class="btn-add-to-cart" data-product="Golden Turmeric Latte" data-price="46000">
+                                <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+<section id="testimonials" class="section-dark">
+    <div class="container">
+        <div class="section-title">
+            <h2>Testimoni Pelanggan</h2>
+            <p>Apa kata mereka tentang Luxury Coffee</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimoni 1 - Budi Santoso -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Kopi terbaik yang pernah saya coba! Signature Blend-nya benar-benar luar biasa. Sekarang saya tidak bisa minum kopi di tempat lain."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Budi Santoso">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Budi Santoso</h4>
+                                    <span>Pelanggan Setia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 2 - Sarah Wijaya -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"Atmosfer yang sempurna untuk bekerja atau sekadar bersantai. Wi-Fi cepat, musiknya tepat, dan kopinya luar biasa!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                     <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sarah Wijaya">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Wijaya</h4>
+                                    <span>Digital Nomad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 3 - Andi Pratama -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Blue Mountain Jamaica-nya worth every penny! Pelayanan ramah dan tempat yang sangat Instagrammable."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Andi Pratama">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Andi Pratama</h4>
+                                    <span>Food Blogger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 4 - Lisa Darmawan -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Tempat favorit saya untuk meeting klien. Profesional, elegan, dan kopinya selalu konsisten kualitasnya."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Lisa Darmawan">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Lisa Darmawan</h4>
+                                    <span>Business Consultant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 5 - Rudi Hartono -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Pelayanan luar biasa! Barista sangat ahli dan bisa merekomendasikan kopi sesuai selera. Pasti akan kembali lagi!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <!-- FOTO BARU untuk Rudi Hartono -->
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Rudi Hartono">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Rudi Hartono</h4>
+                                    <span>Coffee Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 6 - Dian Sastro -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Tempat yang sempurna untuk date night. Suasana romantis dengan pencahayaan yang tepat dan kopi yang luar biasa."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <!-- FOTO BARU untuk Dian Sastro -->
+                                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Dian Sastro">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Dian Sastro</h4>
+                                    <span>Art Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 7 - Bambang Wijaya -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Kualitas kopi premium dengan harga yang reasonable. Tempatnya sangat cozy untuk bekerja remote."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <!-- FOTO BARU untuk Bambang Wijaya -->
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Bambang Wijaya">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Bambang Wijaya</h4>
+                                    <span>Software Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimoni 8 - Maya Sari -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"Affogato mereka luar biasa! Kombinasi gelato premium dengan espresso berkualitas. Worth every penny!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <!-- FOTO BARU untuk Maya Sari -->
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Maya Sari">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Maya Sari</h4>
+                                    <span>Food Critic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Lokasi -->
+    <section id="location" class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lokasi & Jam Operasional</h2>
+                <p>Kunjungi kedai kami di Surabaya</p>
+            </div>
+            
+            <div class="location-container">
+                <div class="location-info">
+                    <h3><i class="fas fa-store"></i> Luxury Coffee Surabaya</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Tunjungan No. 123, Surabaya, Jawa Timur 60275</p>
+                    <div class="opening-hours">
+                        <h4><i class="fas fa-clock"></i> Jam Operasional</h4>
+                        <div class="hours-grid">
+                            <div class="day">Senin - Jumat</div>
+                            <div class="time">07:00 - 22:00</div>
+                            <div class="day">Sabtu</div>
+                            <div class="time">08:00 - 23:00</div>
+                            <div class="day">Minggu</div>
+                            <div class="time">08:00 - 23:00</div>
+                        </div>
+                    </div>
+                    <div class="location-features">
+                        <h4><i class="fas fa-check-circle"></i> Fasilitas</h4>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> Free High-Speed WiFi</li>
+                            <li><i class="fas fa-plug"></i> Charging Station</li>
+                            <li><i class="fas fa-parking"></i> Parking Area</li>
+                            <li><i class="fas fa-snowflake"></i> AC</li>
+                            <li><i class="fas fa-music"></i> Live Music (Weekend)</li>
+                        </ul>
+                    </div>
+                    <a href="https://maps.google.com/?q=Jl.+Tunjungan+No.+123,+Surabaya" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-directions"></i> Petunjuk Arah
+                    </a>
+                </div>
+                <div class="location-map">
+                    <div id="map">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Lokasi Luxury Coffee</h3>
+                            <p>Jl. Tunjungan No. 123, Surabaya</p>
+                            <p>Buka setiap hari 07:00 - 23:00</p>
+                            <a href="https://maps.google.com/?q=Jl.+Tunjungan+No.+123,+Surabaya" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-map-marker-alt"></i> Lihat di Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Kami siap melayani Anda</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Alamat</h4>
+                            <p>Jl. Tunjungan No. 123, Surabaya, Jawa Timur 60275</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:info@luxurycoffee.com">info@luxurycoffee.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telepon</h4>
+                            <a href="tel:+62311234567">(031) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Media Sosial</h4>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>@luxurycoffee.sby</span>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Luxury Coffee Surabaya</span>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Luxury Coffee TV</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Pertanyaan Umum</option>
+                                <option value="reservation">Reservasi</option>
+                                <option value="event">Acara & Event</option>
+                                <option value="partnership">Kerjasama</option>
+                                <option value="complaint">Keluhan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-img">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2>Luxury Coffee</h2>
+                            <span>Pengalaman Kopi Premium</span>
+                        </div>
+                    </div>
+                    <p>Kami berdedikasi untuk menyajikan pengalaman kopi premium terbaik dengan kualitas tertinggi dan pelayanan yang tak tertandingi.</p>
+                    <div class="footer-social">
+                        <h4>Ikuti Kami</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h3>Menu Navigasi</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Keunggulan</a></li>
+                        <li><a href="#products">Menu</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#location">Lokasi</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Tunjungan No. 123, Surabaya</p>
+                    <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@luxurycoffee.com</p>
+                    <p><i class="fas fa-clock"></i> Buka Setiap Hari 07:00 - 23:00</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Dapatkan info promo, menu baru, dan event spesial</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit">Berlangganan</button>
+                    </form>
+                    <p class="newsletter-note">Dengan berlangganan, Anda menyetujui kebijakan privasi kami.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Luxury Coffee - Premium Coffee Shop. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal untuk Sign In -->
+    <div class="modal" id="signinModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Masuk</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="signinForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Masuk</button>
+                    <p class="modal-text">Belum punya akun? <a href="#" id="registerLink">Daftar di sini</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Keranjang -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Keranjang Belanja</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems">
+                    <p class="empty-cart">Keranjang belanja kosong</p>
+                </div>
+                <div class="cart-total">
+                    <h4>Total: <span id="cartTotal">Rp 0</span></h4>
+                </div>
+                <div class="cart-buttons">
+                    <button class="btn btn-secondary" id="continueShopping">Lanjut Belanja</button>
+                    <button class="btn btn-primary" id="proceedToCheckout">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Data Pemesan -->
+    <div class="modal" id="customerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Data Pemesan</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="customerForm">
+                    <div class="form-group">
+                        <label for="customerName">Nama Lengkap *</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Nomor WhatsApp *</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" required placeholder="6281234567890">
+                        <small class="form-hint">Contoh: 6281234567890 (tanpa +)</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email</label>
+                        <input type="email" id="customerEmail" name="customerEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="orderType">Jenis Pesanan *</label>
+                        <select id="orderType" name="orderType" required>
+                            <option value="" selected disabled>Pilih jenis pesanan</option>
+                            <option value="takeaway">Ambil di Tempat</option>
+                            <option value="delivery">Antar ke Alamat</option>
+                            <option value="dinein">Makan di Tempat</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="addressGroup">
+                        <label for="customerAddress">Alamat Pengiriman</label>
+                        <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="Jl. Contoh No. 123, Kecamatan, Kota"></textarea>
+                        <small class="form-hint">*Wajib diisi untuk pengantaran</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderTime">Waktu Pengambilan/Pengantaran *</label>
+                        <select id="orderTime" name="orderTime" required>
+                            <option value="" selected disabled>Pilih waktu</option>
+                            <option value="asap">Segera</option>
+                            <option value="30m">30 Menit lagi</option>
+                            <option value="1h">1 Jam lagi</option>
+                            <option value="2h">2 Jam lagi</option>
+                            <option value="specific">Waktu spesifik (tulis di catatan)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderNotes">Catatan Pesanan</label>
+                        <textarea id="orderNotes" name="orderNotes" rows="3" placeholder="Contoh: Kurangi gula, tambah es, dll."></textarea>
+                    </div>
+                    <div class="order-summary">
+                        <h4>Ringkasan Pesanan</h4>
+                        <div id="orderSummary"></div>
+                        <div class="order-total">
+                            <strong>Total: <span id="orderSummaryTotal">Rp 0</span></strong>
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-secondary" id="backToCart">Kembali ke Keranjang</button>
+                        <button type="submit" class="btn btn-primary">Kirim ke WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol keranjang -->
+    <div class="cart-floating">
+        <button id="cartButton">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
